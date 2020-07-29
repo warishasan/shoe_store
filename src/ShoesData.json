@@ -16,7 +16,7 @@
         "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
     },
     "air-raphael-1": {
-      "name": "Air-raphael-1",
+      "name": "AIR-RAPHAEL-1",
       "des": "party wear",
       "price": "$199",
       "instock": "no",
@@ -24,7 +24,7 @@
         "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
     },
     "flex-82": {
-      "name": "Flex-82",
+      "name": "FLEX-82",
       "des" : "premium quality build, highly robust",
       "price": "$349",
       "instock": "yes",
@@ -32,7 +32,7 @@
         "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
     },
     "jupiter": {
-      "name": "Jupiter",
+      "name": "JUPITER",
       "des": "soft soul, comfortable",
       "price": "$400",
       "instock": "yes",
@@ -40,7 +40,7 @@
         "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
     },
     "enigma": {
-      "name": "enigma",
+      "name": "ENIGMA",
       "des": "comes in vibrant colors",
       "price": "$899",
       "instock": "no",
