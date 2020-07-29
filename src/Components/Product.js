@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     padding:"30px",
     backgroundColor: "black",
+    maxWidth: "100%",
     display: "flex",
     justifyContent: "center"
   },
