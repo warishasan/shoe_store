@@ -51,7 +51,7 @@ function Home() {
       <div  >
         <h1 className={classes.root} >Push your limits..</h1>
         <div className={classes.img}>
-        <img  className={classes.img1} src = {homePic} alt = "home image"></img>
+        <img  className={classes.img1} src = {homePic} alt = "background"></img>
         </div>
       </div>
     );

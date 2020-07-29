@@ -12,41 +12,17 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     margin:'0 auto',
     display: 'flex',
-    flexWrap:'wrap'
+    flexWrap:'wrap',
+    textAlign: "center",
+
+    justifyContent: "center"
+
     
   },
-  link: {
-    textAlign: 'center',
-    maxWidth: '300px',
-    boxShadow: '0 0 10px #463636',
-    margin: "0 auto",
-    padding: 50,
-    
-    
-  },
-  grid:{
-    display: 'flex',
-    flexWrap: 'wrap',
-    maxWidth: '300px',
-    
-    
-    
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    display: 'flex',
-    flexWrap: 'wrap',
-    maxWidth: '300px',
-    alingItems: 'center',
-  
-  
-  },
-  text:{
+  heading:{
     paddingTop : 30,
-    alignItems: 'center',
     textAlign: 'center',
+    alignItems: 'center',
     paddingBottom: 30,
     fontSize: 50,
     fontFamily: 'Raleway',
@@ -54,23 +30,53 @@ const useStyles = makeStyles((theme) => ({
   },
   gridContainer:{
 
-    maxWidth: '70%',
-    margin:'0 auto',
-    padding: 50
+    textAlign: "center",
+    padding:"30px",
+    backgroundColor: "black",
+    display: "flex",
+    justifyContent: "center"
   },
-  text1:{
-    fontSize: 20,
-    fontFamily: 'Raleway',
-  fontStyle: 'normal',
-  color: 'black',
-  
-  
-  '&:hover': {
-    color: 'orange',
-    border: '2px solid #FFFFF',
-},
+  link:{
+    backgroundColor: "black",
 
+  },
+  grid: {
+    backgroundColor: "black",
+    padding: "50px"
+  },
+  paper: {
+
+    backgroundColor: "rgb(245,245,245)",
+    width: "500px",
+    padding: "50px",
+    '&:hover': {
+      boxShadow: "10px 20px 100px blue"
+  
+  },
+  },
+
+  shoeTitle:{
+    MozTextDecorationColor: "red",
+    fontSize: "30px",
+    color: "black",
+    textShadow: "0px 10px 7px grey",
+  
+  },
+
+  
+  img:{
+    width: "300px",
+    height: "300px",
+    
+  },
+
+  details:{
+    fontSize: "20px",
+    textShadow:  "0px 10px 7px grey"
   }
+
+
+
 }));
 
 function Product() {
@@ -79,8 +85,8 @@ function Product() {
     return (
 
       
-      <div >
-        <h1 className={classes.text}>Our Products</h1>
+      <div className = {classes.root}>
+        <h1 className={classes.heading}>Our Products</h1>
       <Grid container spacing={3} className={classes.gridContainer} >
 
         {Object.keys(Shoes).map((keyName)=> {
@@ -89,8 +95,9 @@ function Product() {
             <Link  className={classes.link} key = {keyName} to={`/product/${keyName}`}>
             <Grid  className={classes.grid} item xs={12} sm={4}>
             <Paper   elevated={5}  className={classes.paper}> 
-            <h4  className={classes.text1}>{shoe.name}</h4>
-            <img src = {shoe.img}  height={300} alt = 'shoe'></img>
+            <h4 className={classes.shoeTitle}>{shoe.name}</h4>
+            <img className = {classes.img} src = {shoe.img}  height={300} alt = 'shoe'></img>
+            <p className = {classes.details}>{shoe.des}</p>
             </Paper>
           </Grid>
           </Link>
