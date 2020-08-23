@@ -1,50 +1,87 @@
 {
     "air-jordan-3": {
-      "name": "VALOUR BLUE",
+      "id": 0,
+      "name": "Air-Jordan-3",
       "des": "Sportswear, tightfit, flex airflow technology",
-      "price": "$499",
+      "price": "499",
       "instock": "yes",
       "img":
-        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
+      "color": ["black","white"],
+      "quantity": {
+        "black": 0,
+        "white": 0
+      }
+
     },
     "jordan-mars-270": {
+      "id": 1,
       "name": "JORDAN MARS 270 LONDON",
       "des": "High comfort",
-      "price": "$299",
+      "price": "299",
       "instock": "yes",
       "img":
-        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1",
+        "color": ["black","white"],
+        "quantity": {
+          "black": 0,
+          "white": 0
+        }
     },
     "air-raphael-1": {
+      "id": 2,
       "name": "AIR-RAPHAEL-1",
       "des": "party wear",
-      "price": "$199",
-      "instock": "no",
+      "price": "199",
+      "instock": "yes",
       "img":
-        "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
+        "color": ["black","white"],
+        "quantity": {
+          "black": 0,
+          "white": 0
+        }
     },
     "flex-82": {
+      "id":3,
       "name": "FLEX-82",
       "des" : "premium quality build, highly robust",
-      "price": "$349",
+      "price": "349",
       "instock": "yes",
       "img": 
-        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
+        "color": ["black","white"],
+        "quantity": {
+          "black": 0,
+          "white": 0
+        }
     },
     "jupiter": {
+      "id":4,
       "name": "JUPITER",
       "des": "soft soul, comfortable",
-      "price": "$400",
+      "price": "400",
       "instock": "yes",
       "img":
-        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1",
+        "color": ["black","white"],
+        "quantity": {
+          "black": 0,
+          "white": 0
+        }
     },
     "enigma": {
+      "id": 5,
       "name": "ENIGMA",
       "des": "comes in vibrant colors",
-      "price": "$899",
-      "instock": "no",
+      "price": "899",
+      "instock": "yes",
       "img":
-        "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
+        "color": ["black","white"],
+        "quantity": {
+          "black": 0,
+          "white": 0
+        }
     }
   }

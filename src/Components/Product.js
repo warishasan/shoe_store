@@ -7,7 +7,7 @@ import Shoes from './../ShoesData.json';
 
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  productPageRoot: {
     
     alignItems: 'center',
     margin:'0 auto',
@@ -19,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
 
     
   },
-  heading:{
-    paddingTop : 30,
-    textAlign: 'center',
+  productPageHeading:{
+    backgroundColor: 'white',
+    color: 'black',
     alignItems: 'center',
-    paddingBottom: 30,
-    fontSize: 50,
+    textAlign: 'center',
+    fontSize: "5vh",
     fontFamily: 'Raleway',
   fontStyle: 'normal'
   },
@@ -35,10 +35,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "black",
     maxWidth: "100%",
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    
   },
-  link:{
+  productPageLink:{
     backgroundColor: "black",
+    textDecoration: "none"
 
   },
   grid: {
@@ -48,16 +50,17 @@ const useStyles = makeStyles((theme) => ({
   paper: {
 
     backgroundColor: "rgb(245,245,245)",
-    width: "500px",
-    padding: "50px",
+    width: "300px",
+    minHeight: "600px",
+    padding: "2vw",
     '&:hover': {
-      boxShadow: "10px 20px 100px blue"
+      boxShadow: "0px 20px 40px blue"
   
   },
   },
 
   shoeTitle:{
-    MozTextDecorationColor: "red",
+    textDecoration: "underline",
     fontSize: "30px",
     color: "black",
     textShadow: "0px 10px 7px grey",
@@ -74,6 +77,12 @@ const useStyles = makeStyles((theme) => ({
   details:{
     fontSize: "20px",
     textShadow:  "0px 10px 7px grey"
+  },
+
+  price: {
+
+    fontSize: "30px",
+    color: "green"
   }
 
 
@@ -82,23 +91,25 @@ const useStyles = makeStyles((theme) => ({
 
 function Product() {
 
+
   const classes = useStyles();
     return (
 
       
-      <div className = {classes.root}>
-        <h1 className={classes.heading}>Our Products</h1>
+      <div className = {classes.productPageRoot}>
+        <h1 className={classes.productPageHeading}>Our Collection</h1>
       <Grid container spacing={3} className={classes.gridContainer} >
 
         {Object.keys(Shoes).map((keyName)=> {
           const shoe = Shoes[keyName];
           return(
-            <Link  className={classes.link} key = {keyName} to={`/product/${keyName}`}>
+            <Link  className={classes.productPageLink} key = {keyName} to={`/product/${keyName}`}>
             <Grid  className={classes.grid} item xs={12} sm={4}>
             <Paper   elevated={5}  className={classes.paper}> 
             <h4 className={classes.shoeTitle}>{shoe.name}</h4>
             <img className = {classes.img} src = {shoe.img}  height={300} alt = 'shoe'></img>
             <p className = {classes.details}>{shoe.des}</p>
+            <p className = {classes.price} > ${shoe.price} </p>
             </Paper>
           </Grid>
           </Link>
